@@ -1,3 +1,32 @@
 {
-    "MODULE.hello": "hello"
+  "mumble-positional-audio": {
+    "settings": {
+      "enabled": {
+        "name": "Enable Positional Audio",
+        "hint": "Enable integration with Mumble positional audio via the Link plugin"
+      },
+      "updateRate": {
+        "name": "Update Rate (ms)",
+        "hint": "How often to update position data to Mumble (lower values = more responsive but higher CPU usage)"
+      },
+      "audioRange": {
+        "name": "Audio Range",
+        "hint": "Maximum distance for positional audio in grid units (affects audio falloff)"
+      },
+      "scaleMultiplier": {
+        "name": "Scale Multiplier",
+        "hint": "Multiplier for converting FVTT coordinates to audio space (adjust if audio positioning feels wrong)"
+      }
+    },
+    "notifications": {
+      "mumbleLinkNotFound": "Mumble Link plugin not detected. Make sure Mumble is running and the Link plugin is enabled.",
+      "helperNotFound": "Mumble Link Helper application not found. Please run the helper application to enable positional audio.",
+      "connected": "Successfully connected to Mumble Link Helper",
+      "disconnected": "Disconnected from Mumble Link Helper"
+    },
+    "controls": {
+      "testConnection": "Test Mumble Connection",
+      "resetSettings": "Reset Audio Settings"
+    }
+  }
 }
